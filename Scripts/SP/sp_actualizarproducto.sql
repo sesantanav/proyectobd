@@ -6,9 +6,11 @@ autor: Juan
 */
 delimiter $$
 create procedure sp_actualizarproducto (
-	in
+	in _param2 varchar(20),
+    in _param int
 )
 begin 
-	update ...
+	update productos 
+		set valor = _param;
 end
 $$
